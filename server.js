@@ -3,9 +3,12 @@ const app = express();
 
 const PORT = process.env.PORT || 3001
 
-app.get('/', (req, res) => res.send ('Hello WOrld'));
+const secretKey = process.env.SEUPER_SECRET_KEY
+
+app.get('/', (req, res) => res.send ('Hello World'));
 
 
-app.listen (3000, () => {
+
+app.listen (3001, () => {
 Console.log ('App is up and running & listening')
 });
